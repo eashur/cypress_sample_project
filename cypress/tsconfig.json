@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "allowJs": true,
+      "baseUrl": "../node_modules",
+      "types": [
+        "cypress"
+      ]
+    },
+    "include": [
+      "**/*.*"
+    ],
+    "exclude": [
+      "./plugins/**/*",
+      "./typings/**/*",
+      "./built/**/*" // This is what fixed it!
+  ]
+  }
